@@ -1,0 +1,114 @@
+body {
+    background-color: $my-background;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: $link-color;
+    border-color: darken($link-color, 3%);
+    &:hover {
+        background-color: darken($link-color, 3%);
+        border-color: darken($link-color, 6%);
+    }
+}
+
+.logo {
+    font-family: $my-font;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+    font-family: $my-font;
+    font-weight: $thin-font;
+    font-size: 4em;
+}
+
+/*---------nav-----------*/
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    .nav-link,
+    .navbar-brand {
+        color: $link-color;
+    }
+}
+
+/* --------header---------*/
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    .left,
+    .right {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        padding: 1rem;
+    }
+}
+
+#header3 {
+    background: linear-gradient( to left, rgba(255, 255, 255, 0.253), rgba(0, 0, 0, 0.883)), url('img/car2.jpg') no-repeat left top;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    .caption {
+        z-index: 5;
+        text-align: center;
+        color: #fff;
+        .title,
+        .text {
+            margin-bottom: 1.5rem;
+        }
+        .action {
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+}
+
+/*=== store devices (desktops, 992px og op efter...) ===*/
+
+@media (min-width: 992px) {
+    .header .center {
+        width: 50%;
+    }
+    .header {
+        .left {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            width: 40%;
+            height: 60%;
+            transform: translate(0, 0);
+            padding: 1rem;
+        }
+        .right {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            width: 40%;
+            height: 60%;
+            transform: translate(0, 0);
+            padding: 1rem;
+        }
+    }
+    #header3 {
+        .right {
+            display: block;
+        }
+        .caption {
+            text-align: left;
+        }
+    }
+}
