@@ -5,27 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron:wght@400;500&family=Rokkitt:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>The Car Roadshow</title>
 </head>
 
 <body>
     <container>
         <section>
-            <h1 class="title"></h1>
 
             <!--nav-->
 
-
-            <nav class="navbar navbar-default">
-                <div class="container">
+            <div class="container">
+                <nav class="navbar navbar-default" data-toggle="collapse">
                     <a class="navbar-brand logo" href="#">
                         <img src="img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy"> The Car Roadshow
                     </a>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Active</a>
+                            <a class="nav-link active" href="#">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Venue</a>
@@ -38,7 +37,7 @@
                         </li>
 
                     </ul>
-                </div>
+            </div>
             </nav>
 
 
@@ -58,66 +57,221 @@
             </div>
         </header>
         <section>
-            <h2>Featured cars</h2>
-            <figure>
-                <img src="img/bmw-isetta.jpg">
-                <figcaption>BMW Isetta</figcaption>
-            </figure>
-            <figure>
-                <img src="img/mercedes-300sl.jpg">
-                <figcaption>Mercedes 300SL</figcaption>
-            </figure>
-            <figure>
-                <img src="img/volvo-p1800.jpg">
-                <figcaption>Volvo P1800</figcaption>
-            </figure>
+            <h3>Featured cars</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/bmw-isetta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW Isetta</h5>
+                            <p class="card-text">BMW is a cool car that can drive and give you street credit and you have to wear sunglasses while
+                                driving.
+                            </p>
+                            <a href="#" class="btn btn-primary">see model</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-1">
+                        <img src="img/mercedes-300sl.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes 300SL</h5>
+                            <p class="card-text">You have to be at least 65 years old and preferable very rich taste and have a wife of 10 years+.</p>
+                            <a href="#" class="btn btn-primary">see model</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-1">
+                        <img src="img/volvo-p1800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Volvo P1800</h5>
+                            <p class="card-text">put some ice on that forehead and drive like a maniac with this cool and amazing car, take your
+                                mom out on a trip too!.</p>
+                            <a href="#" class="btn btn-primary">see model</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
         </section>
-        <section>
-            <h2>Upcomming shows</h2>
-            <ul>
-                <li>
-                    <p>NOV 18</p>
-                    <h3>Copenhagen</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </li>
-                <li>
-                    <p>NOV 21</p>
-                    <h3>Hamborg</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores eius culpa.</p>
-                </li>
-                <li>
-                    <p>NOV 27</p>
-                    <h3>Paris</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </li>
-                <li>
-                    <p>DEC 02</p>
-                    <h3>Rome</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sed earum eveniet expedita.</p>
-                </li>
-                <li>
-                    <p>DEC 04</p>
-                    <h3>Barcelona</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iure, hic odit!</p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Get your ticket</h2>
-            <div>
-                <h3>Early bird: 59€</h3>
-                <p>On sale until September 30</p>
-                <button>Buy now</button>
+
+        <section class="calender">
+            <h3>Upcomming shows</h3>
+            <div class="row row-striped">
+                <div class="col-2 text-right">
+                    <h4 class="display-4">
+                        <span class="badge badge-secondary">18</span>
+                    </h4>
+                    <h4>NOV</h4>
+                </div>
+                <div class="col-10 pad">
+                    <h4 class="text-uppercase">
+                        <strong>Copenhagen</strong>
+                    </h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i> Monday</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Cafe</li>
+                    </ul>
+                    <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                </div>
             </div>
-            <div>
-                <h3>Regular: 99€</h3>
-                <p>On sale from October 1</p>
-                <button>Buy now</button>
+            <div class="row row-striped">
+                <div class="col-2 text-right">
+                    <h4 class="display-4">
+                        <span class="badge badge-secondary">21</span>
+                    </h4>
+                    <h4>NOV</h4>
+                </div>
+                <div class="col-10 pad">
+                    <h4 class="text-uppercase">
+                        <strong>Hamborg</strong>
+                    </h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+                    </ul>
+                    <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                </div>
+
             </div>
+            <div class="row row-striped">
+                <div class="col-2 text-right">
+                    <h4 class="display-4">
+                        <span class="badge badge-secondary">27</span>
+                    </h4>
+                    <h4>NOV</h4>
+                </div>
+                <div class="col-10 pad">
+                    <h4 class="text-uppercase">
+                        <strong>Paris</strong>
+                    </h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+                    </ul>
+                    <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                </div>
+
+            </div>
+            <div class="row row-striped">
+                <div class="col-2 text-right">
+                    <h4 class="display-4">
+                        <span class="badge badge-secondary">02</span>
+                    </h4>
+                    <h4>DEC</h4>
+                </div>
+                <div class="col-10 pad">
+                    <h4 class="text-uppercase">
+                        <strong>Rome</strong>
+                    </h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+                    </ul>
+                    <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                </div>
+
+            </div>
+            <div class="row row-striped">
+                <div class="col-2 text-right">
+                    <h4 class="display-4">
+                        <span class="badge badge-secondary">04</span>
+                    </h4>
+                    <h4>DEC</h4>
+                </div>
+                <div class="col-10 pad">
+                    <h4 class="text-uppercase">
+                        <strong>Barcelona</strong>
+                    </h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                        <li class="list-inline-item">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+                    </ul>
+                    <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                </div>
+
+            </div>
+
         </section>
+        <section class="tickets">
+            <div class="row">
+                <div class="col-md-6">
+                    <img width="100%" ; src="img/oldschool.jpg" alt="bil">
+
+                </div>
+
+
+                <div class="col-md-6 text-right box">
+                    <h2>Get your ticket</h2>
+                    <div>
+                        <h4>Early bird: 59€</h4>
+                        <p>On sale until September 30</p>
+                        <button class="action btn btn-primary buy">Buy now</button>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Regular: 99€</h4>
+
+                        <p>On sale from October 1</p>
+                        <button class="action btn btn-primary buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <!-- Footer -->
         <footer>
+
+            <!-- Copyright -->
+            </br>
+
             <p>&copy; 2019 The Car Roadshow Inc.</p>
+
+            <!-- Copyright -->
+
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
         </footer>
+        <!-- Footer -->
+        <!-- Add font awesome icons -->
+
+
+
     </container>
     <script src="script.js"></script>
 </body>

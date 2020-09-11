@@ -2179,39 +2179,60 @@ input[type="button"].btn-block {
 body {
   background-color: white; }
 
-.card {
-  margin-bottom: 20px; }
-
 .btn-primary {
-  background-color: #3d3c3c;
-  border-color: #353434; }
+  background-color: white;
+  border-color: #f7f7f7;
+  color: #3d3c3c;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 3px; }
   .btn-primary:hover {
-    background-color: #353434;
-    border-color: #2e2d2d; }
-
-.logo {
-  font-family: "Oswald", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  font-family: 'Orbitron', sans-serif; }
+    background-color: #e6e6e6;
+    border-color: #cdcdcd;
+    color: #3d3c3c; }
 
 h2 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 200;
-  font-size: 4em; }
+  font-family: "Rokkitt", serif;
+  font-size: 3.5em; }
+
+h3 {
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 3.2em; }
+
+h4 {
+  font-family: "Rokkitt", serif;
+  font-size: 2em; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
+.card {
+  margin-bottom: 20px; }
+  .card .card-title {
+    font-family: "Rokkitt", serif;
+    font-size: 2em; }
 
 /*---------nav-----------*/
 .navbar {
   background-color: white; }
-  .navbar .nav-link,
+  .navbar .nav-link {
+    color: #3d3c3c;
+    font-family: "Rokkitt", serif; }
+    .navbar .nav-link:hover {
+      border-radius: 3px;
+      background-color: #ececec; }
   .navbar .navbar-brand {
-    color: #3d3c3c; }
+    color: #3d3c3c;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1em;
+    font-weight: 400; }
 
 /* --------header---------*/
 .header {
   position: relative;
   width: 100vw;
-  height: 600px; }
+  height: 500px;
+  margin-bottom: 60px; }
   .header .left,
   .header .right {
     position: absolute;
@@ -2223,7 +2244,7 @@ h2 {
     padding: 1rem; }
 
 #header3 {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(0, 0, 0, 0.883)), url("img/car2.jpg") no-repeat left top;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(0, 0, 0, 0.883)), url("img/car3.jpg") no-repeat left top;
   background-size: cover;
   background-position: center;
   z-index: 0; }
@@ -2238,6 +2259,75 @@ h2 {
       margin-bottom: 1rem;
       padding-left: 3rem;
       padding-right: 3rem; }
+
+.row {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.row-striped:nth-of-type(odd) {
+  background-color: #efefef;
+  border-left: 4px #000000 solid;
+  border-radius: 2px; }
+
+.row-striped:nth-of-type(even) {
+  background-color: #ffffff;
+  border-left: 4px #efefef solid;
+  border-radius: 2px; }
+
+.row-striped {
+  padding: 0 15px;
+  max-width: 1170px; }
+
+.calender {
+  padding-top: 50px; }
+
+.tickets {
+  margin: 60px 0px 60px 0px;
+  text-align: center; }
+  .tickets .box {
+    background-color: #fcfcfc; }
+  .tickets .buy {
+    background-color: #5fc581;
+    color: white;
+    border-color: #40b166; }
+    .tickets .buy:hover {
+      background-color: #84d39e; }
+
+footer {
+  text-align: center;
+  background-color: #3d3c3c;
+  padding: 30px; }
+  footer .fa {
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 3px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px; }
+    footer .fa:hover {
+      opacity: 0.7; }
+  footer p {
+    color: white;
+    font-family: "Orbitron", sans-serif; }
+  footer .fa-facebook {
+    background: #3B5998;
+    color: white; }
+  footer .fa-twitter {
+    background: #55ACEE;
+    color: white; }
+  footer .fa-google {
+    background: #dd4b39;
+    color: white; }
+  footer .fa-linkedin {
+    background: #007bb5;
+    color: white; }
+  footer .fa-youtube {
+    background: #bb0000;
+    color: white; }
+  footer .fa-instagram {
+    background: #125688;
+    color: white; }
 
 /*=== store devices (desktops, 992px og op efter...) ===*/
 @media (min-width: 992px) {
